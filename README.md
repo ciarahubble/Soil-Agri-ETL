@@ -10,7 +10,7 @@ By structuring and integrating this data, we can track **soil health trends, gra
 
 ---
 
-## ** Features**  
+## **Features**  
 - **Automates CSV ingestion** – Detects new SoilMentor files in a designated folder (contact ciara@borana.co.ke for access)
 - **Cleans and transforms data** – Normalises field names, converts dates, and handles missing values  
 - **Loads into PostgreSQL** – Stores cleaned data in structured, related tables for easy analysis. Making sure not to upload duplicate data with each upsert.
@@ -19,7 +19,7 @@ By structuring and integrating this data, we can track **soil health trends, gra
 
 ---
 
-## ** Project Structure**  
+## **Project Structure**  
 ```
 soil-monitoring-etl/
 │── data_exports/
@@ -40,7 +40,7 @@ soil-monitoring-etl/
 
 ---
 
-## ** Installation & Setup**  
+## **Installation & Setup**  
 
 ### **Install PostgreSQL (Manual or Docker)**  
 
