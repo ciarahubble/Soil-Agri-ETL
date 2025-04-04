@@ -11,10 +11,10 @@ By structuring and integrating this data, we can track **soil health trends, gra
 ---
 
 ## **🔹 Features**  
-- ✅ **Automates CSV ingestion** – Detects new SoilMentor files in a designated folder  
+- ✅ **Automates CSV ingestion** – Detects new SoilMentor files in a designated folder (contact ciara@borana.co.ke for access)
 - ✅ **Cleans and transforms data** – Normalises field names, converts dates, and handles missing values  
-- ✅ **Loads into PostgreSQL** – Stores cleaned data in structured tables for easy analysis  
-- ✅ **Supports geospatial data** – Converts GPS coordinates for use in **PostGIS**  
+- ✅ **Loads into PostgreSQL** – Stores cleaned data in structured, related tables for easy analysis. Making sure not to upload duplicate data with each upsert.
+- ✅ **Supports geospatial data** – Converts GPS coordinates to geometry type for use in **PostGIS**  
 - ✅ **Secure and modular** – Uses **environment variables** for database credentials  
 
 ---
