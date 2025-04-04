@@ -2,19 +2,19 @@
 
 ## **Automating Soil Health Data Processing**  
 
-Soil health data collected from **conservancies across Laikipia**, including **Borana, Lewa, Mugie, Suyian, and Sosian**, plays a crucial role in monitoring **regenerative agriculture, rangeland restoration, and wildlife conservation**. This data supports initiatives such as the **UHD Community Grazing Programme**, which aims to improve soil health and ecosystem resilience through sustainable grazing practices.
+Soil health data collected from **conservancies across Laikipia**, including **Borana, Lewa, Mugie, Suyian, and Sosian**, plays a crucial role in monitoring **regenerative agriculture, rangeland restoration, and wildlife conservation**. This data supports initiatives such as the **Ultra-High Density Community Grazing Programme**, which aims to improve soil health and ecosystem resilience through sustainable grazing practices.
 
-By structuring and integrating this data, we can track **soil health trends, carbon sequestration, and the ecological impacts of regenerative land management** over time, providing valuable insights for conservation and land-use planning.
+By structuring and integrating this data, we can track **soil health trends, grassland species diversity, ground cover, and the ecological impacts of regenerative land management** over time, helping to provide key insights for conservation and land-use planning.
 
-**Soil-Monitoring-ETL** is a Python-based **ETL (Extract, Transform, Load) pipeline** that automates the processing of **SoilMentor CSV files**, cleaning and loading them into a **PostgreSQL database** for structured analysis. This ensures that soil health data is stored in a standardized format, making it easier to analyze and compare across different sites and seasons.
+**Soil-Monitoring-ETL** is a Python-based **ETL (Extract, Transform, Load) pipeline** that automates the processing of **SoilMentor CSV files**, cleaning and loading them into a **PostgreSQL database** for structured analysis. This ensures that soil health data is stored in a standardised format, making it easier to analyse and compare across different sites and seasons.
 
 ---
 
 ## **🔹 Features**  
 - ✅ **Automates CSV ingestion** – Detects new SoilMentor files in a designated folder  
-- ✅ **Cleans and transforms data** – Normalizes field names, converts dates, and handles missing values  
+- ✅ **Cleans and transforms data** – Normalises field names, converts dates, and handles missing values  
 - ✅ **Loads into PostgreSQL** – Stores cleaned data in structured tables for easy analysis  
-- ✅ **Supports geospatial data** – Converts GPS coordinates (if available) for use in **PostGIS**  
+- ✅ **Supports geospatial data** – Converts GPS coordinates for use in **PostGIS**  
 - ✅ **Secure and modular** – Uses **environment variables** for database credentials  
 
 ---
