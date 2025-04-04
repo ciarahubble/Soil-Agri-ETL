@@ -1,4 +1,4 @@
-# 🌱 Soil-Monitoring-ETL  
+# 🌱 soil-monitoring-etl 
 
 ## **Automating Soil Health Data Processing**  
 
@@ -10,16 +10,16 @@ By structuring and integrating this data, we can track **soil health trends, gra
 
 ---
 
-## **🔹 Features**  
-- ✅ **Automates CSV ingestion** – Detects new SoilMentor files in a designated folder (contact ciara@borana.co.ke for access)
-- ✅ **Cleans and transforms data** – Normalises field names, converts dates, and handles missing values  
-- ✅ **Loads into PostgreSQL** – Stores cleaned data in structured, related tables for easy analysis. Making sure not to upload duplicate data with each upsert.
-- ✅ **Supports geospatial data** – Converts GPS coordinates to geometry type for use in **PostGIS**  
-- ✅ **Secure and modular** – Uses **environment variables** for database credentials  
+## ** Features**  
+- **Automates CSV ingestion** – Detects new SoilMentor files in a designated folder (contact ciara@borana.co.ke for access)
+- **Cleans and transforms data** – Normalises field names, converts dates, and handles missing values  
+- **Loads into PostgreSQL** – Stores cleaned data in structured, related tables for easy analysis. Making sure not to upload duplicate data with each upsert.
+- **Supports geospatial data** – Converts GPS coordinates to geometry type for use in **PostGIS**  
+- **Secure and modular** – Uses **environment variables** for database credentials  
 
 ---
 
-## **📦 Project Structure**  
+## ** Project Structure**  
 ```
 soil-monitoring-etl/
 │── data_exports/
@@ -40,9 +40,9 @@ soil-monitoring-etl/
 
 ---
 
-## **📥 Installation & Setup**  
+## ** Installation & Setup**  
 
-### **1️⃣ Install PostgreSQL (Manual or Docker)**  
+### **Install PostgreSQL (Manual or Docker)**  
 
 #### **Option 1: Install Locally**  
 - [Download PostgreSQL](https://www.postgresql.org/download/) and install it on your system.
@@ -55,7 +55,7 @@ docker run --name soil_db -e POSTGRES_USER=youruser -e POSTGRES_PASSWORD=yourpas
 
 ---
 
-### **2️⃣ Clone the Repository**  
+### **Clone the Repository**  
 ```bash
 git clone https://github.com/your-repo-name/soil-monitoring-etl.git
 cd soil-monitoring-etl
@@ -63,7 +63,7 @@ cd soil-monitoring-etl
 
 ---
 
-### **3️⃣ Set Up Environment Variables**  
+### **Set Up Environment Variables**  
 Create a `.env` file in the project root and add your **PostgreSQL credentials**:  
 ```ini
 DB_HOST=localhost
@@ -75,7 +75,7 @@ DB_PORT=5432
 
 ---
 
-### **4️⃣ Place CSV Files in the Correct Folder**  
+### **Place CSV Files in the Correct Folder**  
 All SoilMentor CSV files should be saved in:  
 ```
 data_exports/soilmentor/
@@ -84,7 +84,7 @@ The script will automatically detect new files in this directory.
 
 ---
 
-### **🚀 How to Run the ETL Pipeline**  
+### **How to Run the ETL Pipeline**  
 Run the script to process SoilMentor data and load it into PostgreSQL:  
 ```bash
 python etl/etl_soilmentor.py
@@ -92,7 +92,7 @@ python etl/etl_soilmentor.py
 
 ---
 
-## **🔒 Security & Best Practices**  
+## **Security & Best Practices**  
 - Do not commit sensitive credentials. Always use `.env` files.  
 - Validate CSV data before processing to prevent errors.  
 - Set up logging to monitor ETL processes.  
@@ -100,7 +100,7 @@ python etl/etl_soilmentor.py
 
 ---
 
-## **🤝 Contributing**  
+## **Contributing**  
 We welcome contributions! To get started:  
 1. **Fork the repository** on GitHub  
 2. **Create a new branch**  
@@ -113,7 +113,7 @@ We welcome contributions! To get started:
    ```
 4. **Push to your fork and create a pull request**
 
-### ✅ Ideal First Contributions  
+### Ideal First Contributions  
 - Add unit tests for `etl_soilmentor.py`  
 - Add support for other soil indicators  
 - Build cloud integration for fetching CSVs from Google Drive or OneDrive  
@@ -121,11 +121,11 @@ We welcome contributions! To get started:
 
 ---
 
-## **📜 License**  
+## **License**  
 This project is open-source and available under the **MIT License**.  
 
 ---
 
-## **📩 Contact**  
+## **Contact**  
 For questions or contributions, reach out via:  
 📧 **ciarahubble@hotmail.co.uk** / **ciara@borana.co.ke**
